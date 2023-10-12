@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
 header {
   display: flex;
   justify-content: space-evenly;
@@ -60,6 +62,18 @@ header {
 .buttonpma:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 70px var(--animation-color))
+}
+
+@keyframes r1 {
+  50% {
+    transform: rotate(-1deg) rotateZ(-10deg);
+  }
+}
+
+@keyframes r2 {
+  50% {
+    transform: rotateX(-65deg);
+  }
 }
 .heading ul li {
   list-style: none;
@@ -120,7 +134,9 @@ ion-icon {
 ion-icon:hover {
   cursor: pointer;
 }
-
+.search a {
+  display: flex;
+}
 header a ion-icon {
   position: relative;
   right: 3px;
@@ -178,7 +194,6 @@ header a ion-icon {
   animation-duration: 10s;
   animation-iteration-count: infinite;
   transition-duration: 2s;
-  
 }
 
 .heading1 {
@@ -511,31 +526,6 @@ footer {
     flex-wrap: nowrap;
   }
 }
-
-
-
-@keyframes floating {
-  0%, 100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-5px);
-  }
-}
-
-@keyframes particles {
-  0% {
-    transform: translateZ(0, 0);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translate(190px, 50px);
-    opacity: 0;
-  }
-}
-
 
 
 .Btn {
